@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=https://entranos.github.io/s2027/viewer/">
+  <link rel="canonical" href="https://entranos.github.io/s2027/viewer/">
+  <title>PBL Flux Viewer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f0ede8;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 4px;
+      padding: 52px 56px 48px;
+      max-width: 420px;
+      width: 100%;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #aaa;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #111;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    .divider {
+      height: 1px;
+      background: #eee;
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #555;
+      font-size: 13px;
+    }
+
+    .spinner {
+      width: 16px;
+      height: 16px;
+      border: 2px solid #ddd;
+      border-top-color: #555;
+      border-radius: 50%;
+      flex-shrink: 0;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .link {
+      font-size: 12px;
+      color: #bbb;
+    }
+
+    .link a {
+      color: #888;
+      text-decoration: none;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .link a:hover {
+      color: #333;
+      border-color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div>
+      <div class="label">PBL Flux Viewer</div>
+    </div>
+    <h1>U wordt doorgestuurd naar de viewer</h1>
+    <div class="divider"></div>
+    <div class="status">
+      <div class="spinner"></div>
+      <span>Doorsturen…</span>
+    </div>
+    <div class="link">
+      Werkt het niet? <a href="https://entranos.github.io/pbl-viewer/viewer/">Klik hier</a>
+    </div>
+  </div>
+  <script>window.location.replace("https://entranos.github.io/pbl-viewer/viewer/");</script>
+</body>
+</html>
